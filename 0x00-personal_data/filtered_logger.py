@@ -5,7 +5,7 @@
 import re
 
 
-def filter_datum(fields, redaction, message, separator):
+def filter_datum(fields, redaction, message, separator) -> str:
     """filters a logged file"""
     pattern = (r'(' + '|'.join(re.escape(field) for field in fields) +
                r')=[^' + re.escape(separator) + r']*')
