@@ -20,5 +20,6 @@ class Auth:
             return None
 
     def current_user(self, request=None) -> TypeVar('User'):
+        """currently returns None"""
         if request is None:
             return None
