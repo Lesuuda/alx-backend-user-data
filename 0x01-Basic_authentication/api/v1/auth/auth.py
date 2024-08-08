@@ -12,7 +12,7 @@ class Auth:
         """
         returns false path and excluded paths
         """
-        return (path, excluded_paths)
+        return False
 
     def authorization_header(self, request=None) -> str:
         """returns None"""
