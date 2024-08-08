@@ -27,7 +27,7 @@ class Auth:
         if request is None:
             return None
         key = 'Authorizaion'
-        if key not in request:
+        if key not in request.headers:
             return None
         return request.get(key)
 
